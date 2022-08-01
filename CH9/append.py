@@ -1,0 +1,7 @@
+f = open("new.txt", "a")
+f.write(" \n and This is append method")
+f.close()
+r = open("new.txt")
+data = r.read()
+print(data)
+r.close()
