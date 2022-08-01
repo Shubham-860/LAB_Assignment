@@ -79,7 +79,7 @@
 
 # 7
 
-post = input("Enter the post")
+post = input("Enter the post\n")
 postL = post.lower()
 if postL.__contains__("harry"):
     print("post is talking about harry")

@@ -97,9 +97,16 @@
 #     print("*")
 
 # 9
-a = int(input("Enter a number:"))
-mu = []
-for i in range(1, 11):
-    mu.append(f"{a}X{i}={a * i}")
-for m in mu:
-    print(m)
+a = input("Enter a number: ")
+while True:
+
+    try:
+        a = int(a)
+        mu = []
+        for i in range(1, 11):
+            mu.append(f"{a}X{i}={a * i}")
+        for m in mu:
+            print(m)
+        break
+    except:
+        a = input("Enter number: ")
